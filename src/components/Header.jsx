@@ -2,12 +2,13 @@ import React from "react"
 import { useState } from "react"
 import logo1 from "../assets/logo (2).png"
 import { Sling as Hamburger } from "hamburger-react"
+import { motion } from "framer-motion"
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <div className=" relative flex bg-[#FFFF] justify-between items-center md:max-w-[85%] lg:max-w-[70%] m-auto mt-4">
+      <div className=" relative flex bg-[#FFFF] justify-between items-center max-w-[90%] md:max-w-[85%] lg:max-w-[70%] m-auto mt-4 drop-shadow-lg">
         <div>
           <img src={logo1} alt="" />
         </div>
@@ -37,36 +38,47 @@ const Header = () => {
           <Hamburger duration={0.5} />
         </div>
       </div>
-      <div
+      <motion.div
+        initial={{ x: toggle ? 0 : -500 }}
+        animate={{ x: toggle ? 0 : -500, duration: 0.5 }}
+        transition={{ duration: 0.5 }}
+        exit={{ duration: 3 }}
         className={
           toggle
-            ? " absolute z-10 p-4 px-8 w-full bg-white md:hidden rounded-b-lg mt-2 dropdown    duration-500 "
-            : "hidden"
+            ? "absolute z-10 p-4 px-8 w-full bg-white md:hidden rounded-b-lg mt-2"
+            : "hidden absolute"
         }
       >
-        <ul className="p-1 text-center ">
-          <li className="p-2 cursor-pointer my-6 hover:bg-gray-100  ">
-            <a className="font-semibold" href="">
-              Press
-            </a>
-          </li>
-          <li className="p-2  cursor-pointer my-6 hover:bg-gray-100">
-            <a className="font-semibold" href="">
-              Career
-            </a>
-          </li>
-          <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
-            <a className="font-semibold" href="">
-              Blog
-            </a>
-          </li>
-          <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
-            <a className="font-semibold" href="">
-              Contact
-            </a>
-          </li>
+        <ul className="p-1 text-center uppercase ">
+          <a className="font-semibold" href="">
+            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100  ">
+              home
+            </li>
+          </a>
+
+          <a className="font-semibold" href="">
+            <li className="p-2  cursor-pointer my-6 hover:bg-gray-100">
+              pricing
+            </li>
+          </a>
+
+          <a className="font-semibold" href="">
+            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
+              about us
+            </li>
+          </a>
+
+          <a className="font-semibold" href="">
+            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">blog</li>
+          </a>
+
+          <a className="font-semibold" href="">
+            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
+              contact
+            </li>
+          </a>
         </ul>
-      </div>
+      </motion.div>
     </>
   )
 }
