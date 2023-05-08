@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .heroBtn {
+    @apply py-2 border-[#242424] uppercase px-6 rounded-md text-sm bg-[#000000] tracking-widest text-[#FFFF] transition-all border hover:border-[#F7AB0A] hover:text-[#F7AB0A] cursor-pointer outline-none;
+  }
+
+  .heroBtn2 {
+    @apply py-2 border-[#000000] uppercase px-6 rounded-md text-sm bg-[#FFF] tracking-widest text-[#000000] transition-all border hover:border-[#F7AB0A] hover:text-[#F7AB0A] cursor-pointer outline-none;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }

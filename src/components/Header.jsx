@@ -1,12 +1,16 @@
+import React from "react"
+import { useState } from "react"
 import logo1 from "../assets/logo (2).png"
+import { Sling as Hamburger } from "hamburger-react"
 const Header = () => {
+  const [toggle, setToggle] = useState(false)
   return (
-    <div className=" flex bg-[#FFFF] justify-between items-center md:max-w-[85%] lg:max-w-[70%] m-auto">
+    <div className=" flex bg-[#FFFF] justify-between items-center md:max-w-[85%] lg:max-w-[70%] m-auto mt-4">
       <div>
         <img src={logo1} alt="" />
       </div>
-      <div>
-        <ul className="outline-none uppercase flex gap-8 tracking-wide text-md">
+      <div className="hidden md:flex">
+        <ul className="outline-none uppercase flex gap-8 tracking-wider text-[15px]">
           <li>
             <a href="#">Home</a>
           </li>
@@ -26,6 +30,9 @@ const Header = () => {
             <a href="#">contact</a>
           </li>
         </ul>
+      </div>
+      <div className="md:hidden">
+        <Hamburger />
       </div>
     </div>
   )
