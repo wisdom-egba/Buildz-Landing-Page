@@ -1,12 +1,12 @@
 import logo1 from "../assets/logo (2).png"
 const Header = () => {
   return (
-    <div className="text-lg flex bg-[#FFFF]">
+    <div className=" flex bg-[#FFFF] justify-between items-center md:max-w-[85%] lg:max-w-[70%] m-auto">
       <div>
         <img src={logo1} alt="" />
       </div>
       <div>
-        <ul className="outline-none uppercase">
+        <ul className="outline-none uppercase flex gap-8 tracking-wide text-md">
           <li>
             <a href="#">Home</a>
           </li>
