@@ -1,7 +1,7 @@
 import img1 from "../assets/bro.png"
 export const Hero = () => {
   return (
-    <div className="flex bg-[#FFFF] justify-between items-center md:max-w-[85%] lg:max-w-[70%] m-auto">
+    <div className="md:flex bg-[#FFFF] justify-between items-center md:max-w-[85%] lg:max-w-[70%] m-auto">
       <div className="w-[60%]">
         <div className="w-[70%]">
           <h1 className="md:text-2xl lg:4xl ">
