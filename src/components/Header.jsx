@@ -8,77 +8,80 @@ const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <div className=" relative flex bg-[#FFFF] justify-between items-center max-w-[90%] md:max-w-[85%] lg:max-w-[70%] m-auto mt-4 drop-shadow-lg">
-        <div>
-          <img src={logo1} alt="" />
+      <div className="shadow-lg ">
+        <div className=" relative flex bg-[#FFFF] justify-between items-center max-w-[90%] md:max-w-[85%] lg:max-w-[70%] m-auto mt-4">
+          <div className="">
+            <img className="w-[80%] md:w-[100%]" src={logo1} alt="" />
+          </div>
+          <div className="hidden md:flex">
+            <ul className="outline-none uppercase flex gap-8 tracking-wider text-[15px]">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Service</a>
+              </li>
+              <li>
+                <a href="#">blog</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="md:hidden" onClick={() => setToggle(!toggle)}>
+            <Hamburger size={25} duration={0.5} />
+          </div>
         </div>
-        <div className="hidden md:flex">
-          <ul className="outline-none uppercase flex gap-8 tracking-wider text-[15px]">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">About us</a>
-            </li>
-            <li>
-              <a href="#">Service</a>
-            </li>
-            <li>
-              <a href="#">blog</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
+        <motion.div
+          initial={{ x: toggle ? 0 : -500 }}
+          animate={{ x: toggle ? 0 : -500 }}
+          transition={{ duration: toggle ? 0.5 : 2.5 }}
+          className={
+            toggle
+              ? "absolute z-10 p-4 px-8 w-full bg-white md:hidden rounded-b-lg mt-2"
+              : "hidden absolute"
+          }
+        >
+          <ul className="p-1 text-center uppercase ">
+            <a className="font-semibold" href="">
+              <li className="p-2 cursor-pointer my-6 hover:bg-gray-100  ">
+                home
+              </li>
+            </a>
+
+            <a className="font-semibold" href="">
+              <li className="p-2  cursor-pointer my-6 hover:bg-gray-100">
+                pricing
+              </li>
+            </a>
+
+            <a className="font-semibold" href="">
+              <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
+                about us
+              </li>
+            </a>
+
+            <a className="font-semibold" href="">
+              <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
+                blog
+              </li>
+            </a>
+
+            <a className="font-semibold" href="">
+              <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
+                contact
+              </li>
+            </a>
           </ul>
-        </div>
-        <div className="md:hidden" onClick={() => setToggle(!toggle)}>
-          <Hamburger duration={0.5} />
-        </div>
+        </motion.div>
       </div>
-      <motion.div
-        initial={{ x: toggle ? 0 : -500 }}
-        animate={{ x: toggle ? 0 : -500, duration: 0.5 }}
-        transition={{ duration: 0.5 }}
-        exit={{ duration: 3 }}
-        className={
-          toggle
-            ? "absolute z-10 p-4 px-8 w-full bg-white md:hidden rounded-b-lg mt-2"
-            : "hidden absolute"
-        }
-      >
-        <ul className="p-1 text-center uppercase ">
-          <a className="font-semibold" href="">
-            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100  ">
-              home
-            </li>
-          </a>
-
-          <a className="font-semibold" href="">
-            <li className="p-2  cursor-pointer my-6 hover:bg-gray-100">
-              pricing
-            </li>
-          </a>
-
-          <a className="font-semibold" href="">
-            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
-              about us
-            </li>
-          </a>
-
-          <a className="font-semibold" href="">
-            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">blog</li>
-          </a>
-
-          <a className="font-semibold" href="">
-            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100">
-              contact
-            </li>
-          </a>
-        </ul>
-      </motion.div>
     </>
   )
 }
