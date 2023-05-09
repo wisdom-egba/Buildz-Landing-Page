@@ -2,7 +2,7 @@ import React from "react"
 import analysis from "../assets/rafiki.jpg"
 export const Analysis = () => {
   return (
-    <div className="md:flex max-w-[85%] grid md:max-w-[85%] lg:max-w-[70%] m-auto md:mt-28 w-screen items-center">
+    <div className="md:flex max-w-[85%] grid md:max-w-[85%] lg:max-w-[70%] m-auto md:mt-28 items-center">
       <div className="md:w-[60%] order-last md:order-first mb-20 md:mb-0">
         <img className="md:w-[450px] md:h-[450px] " src={analysis} alt="" />
       </div>
