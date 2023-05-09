@@ -3,7 +3,7 @@ import img1 from "../assets/bro.png"
 export const Hero = () => {
   return (
     <>
-      <div className=" md:mt-24 md:flex bg-[#FFFF] justify-between items-center max-w-[85%] md:max-w-[85%] lg:max-w-[70%] m-auto pb-[200px]">
+      <div className=" relative z-0 md:mt-24 md:flex bg-[#FFFF] justify-between items-center max-w-[85%] md:max-w-[85%] lg:max-w-[70%] m-auto pb-[200px]">
         <div className="mt-[90px] md:mt-0 md:w-[60%]">
           <div className="md:w-[70%]">
             <h1 className="text-4xl font-bold md:text-2xl lg:text-6xl py-6 tracking-wider ">

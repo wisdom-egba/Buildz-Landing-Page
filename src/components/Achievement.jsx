@@ -1,7 +1,6 @@
 import React from "react"
-import { HiOutlineLightBulb } from "react-icons/hi"
-import { FaRegMoneyBillAlt } from "react-icons/fa"
-import { BsCreditCard } from "react-icons/bs"
+import { Card } from "./Card"
+
 export const Achievement = () => {
   return (
     <div className="relative">
@@ -34,34 +33,8 @@ export const Achievement = () => {
           </div>
         </div>
       </div>
-      <div className=" relative z-20 max-w-[85%] md:max-w-[85%] lg:max-w-[70%] m-auto flex justify-between items-center">
-        <div className="bg-[#FFFF] md:h-[200px] md:w-[200px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg">
-          <HiOutlineLightBulb
-            size={20}
-            style={{ color: "black", fill: "black" }}
-          />
-          <h1 className="">branding</h1>
-          <p>
-            Regular Business Law Assistance service includes monitoring the
-            legal sphere of your business
-          </p>
-        </div>
-        <div className="bg-[#FFFF] md:h-[200px] md:w-[200px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg">
-          <FaRegMoneyBillAlt
-            size={20}
-            style={{ color: "black", fill: "black" }}
-          />
-          <h1 className="">finance</h1>
-          <p>We provide with all financial services including consultation</p>
-        </div>
-        <div className="bg-[#FFFF] md:h-[200px] md:w-[200px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center">
-          <BsCreditCard size={20} style={{ color: "black", fill: "black" }} />
-          <h1 className="">marketing</h1>
-          <p>
-            Good marketing plan is crucial for businessmen who wnat to develop
-            their businesses
-          </p>
-        </div>
+      <div className="absolute z-20 top-[-120px] w-screen">
+        <Card />
       </div>
     </div>
   )
