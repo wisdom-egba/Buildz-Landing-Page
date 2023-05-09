@@ -8,7 +8,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <div className="shadow-lg py-2">
+      <div className="shadow-lg py-2  ">
         <div className=" relative flex bg-[#FFFF] justify-between items-center max-w-[90%] md:max-w-[85%] lg:max-w-[70%] m-auto mt-4">
           <div className="">
             <a href="#">
