@@ -11,7 +11,9 @@ const Header = () => {
       <div className="shadow-lg py-2">
         <div className=" relative flex bg-[#FFFF] justify-between items-center max-w-[90%] md:max-w-[85%] lg:max-w-[70%] m-auto mt-4">
           <div className="">
-            <img className="w-[80%] md:w-[100%]" src={logo1} alt="" />
+            <a href="#">
+              <img className="w-[80%] md:w-[100%]" src={logo1} alt="" />
+            </a>
           </div>
           <div className="hidden md:flex">
             <ul className="outline-none uppercase flex gap-8 tracking-wider text-[15px]">

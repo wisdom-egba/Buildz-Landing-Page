@@ -1,3 +1,4 @@
+import { Result } from "./components/Result"
 import { Achievement } from "./components/Achievement"
 import Header from "./components/Header"
 import { Hero } from "./components/Hero"
@@ -12,6 +13,9 @@ function App() {
       <body>
         <Achievement />
       </body>
+      <section>
+        <Result />
+      </section>
     </div>
   )
 }
