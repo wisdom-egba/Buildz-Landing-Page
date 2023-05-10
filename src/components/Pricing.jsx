@@ -10,8 +10,8 @@ export const Pricing = () => {
           financial planning.
         </p>
       </div>
-      <div className="max-w-[85%] grid place-items-center md:max-w-[85%] lg:max-w-[70%] m-auto md:flex relative">
-        <div className="text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[280px] rounded-xl">
+      <div className=" relative z-0 max-w-[85%] grid place-items-center md:max-w-[85%] lg:max-w-[70%] m-auto md:flex justify-center items-center">
+        <div className="text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[300px] rounded-xl">
           <h2 className="mt-5 text-gray-400 text-lg">1 USER</h2>
           <div className="py-6">
             <h1 className="font-bold text-2xl">Premium</h1>
@@ -39,7 +39,7 @@ export const Pricing = () => {
             </button>
           </ul>
         </div>
-        <div className="text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[280px] rounded-xl">
+        <div className=" relative z-20 mt-9 text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[320px] rounded-xl">
           <h2 className="mt-5 text-gray-400 text-lg">1 USER</h2>
           <div className="py-6">
             <h1 className="font-bold text-2xl">Premium</h1>
@@ -67,7 +67,7 @@ export const Pricing = () => {
             </button>
           </ul>
         </div>
-        <div className="text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[280px] rounded-xl">
+        <div className="relative z-10 text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[300px] rounded-xl">
           <h2 className="mt-5 text-gray-400 text-lg">1 USER</h2>
           <div className="py-6">
             <h1 className="font-bold text-2xl">Premium</h1>
