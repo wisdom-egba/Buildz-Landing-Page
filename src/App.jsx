@@ -6,29 +6,35 @@ import { Experience } from "./components/Experience"
 import { Pricing } from "./components/Pricing"
 import React from "react"
 import { DisplaySlider } from "./components/DisplaySlider"
-
+import { FormData } from "./components/FormData"
 function App() {
   return (
     <div>
       <Header />
-      <section>
+      <section id="hero">
         <Hero />
       </section>
       <body>
-        <Achievement />
+        <section id="achievement">
+          <Achievement />
+        </section>
+        <section id="result">
+          <Result />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="price">
+          <Pricing />
+        </section>
+        <section id="slide">
+          <DisplaySlider />
+        </section>
+        <section id="form">
+          <FormData />
+        </section>
       </body>
-      <section>
-        <Result />
-      </section>
-      <section>
-        <Experience />
-      </section>
-      <section>
-        <Pricing />
-      </section>
-      <section>
-        <DisplaySlider />
-      </section>
+      <footer></footer>
     </div>
   )
 }
