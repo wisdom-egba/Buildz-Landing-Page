@@ -1,4 +1,7 @@
-export const slider = [
+import img1 from "../assets/Rectangle 26 (1).png"
+import img2 from "../assets/Rectangle 27 (1).png"
+import img3 from "../assets/Rectangle 28 (1).png"
+export const sliders = [
   {
     id: 1,
     img: img1,

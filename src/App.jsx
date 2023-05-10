@@ -4,6 +4,8 @@ import Header from "./components/Header"
 import { Hero } from "./components/Hero"
 import { Experience } from "./components/Experience"
 import { Pricing } from "./components/Pricing"
+import React from "react"
+import { DisplaySlider } from "./components/DisplaySlider"
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
       </section>
       <section>
         <Pricing />
+      </section>
+      <section>
+        <DisplaySlider />
       </section>
     </div>
   )
