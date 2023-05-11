@@ -7,11 +7,15 @@ import { Pricing } from "./components/Pricing"
 import React from "react"
 import { DisplaySlider } from "./components/DisplaySlider"
 import { FormData } from "./components/FormData"
+import { Footer } from "./components/Footer"
 function App() {
   return (
     <div>
-      <Header />
-      <section id="hero">
+      <header id="header">
+        <Header />
+      </header>
+
+      <section id="home">
         <Hero />
       </section>
       <body>
@@ -24,7 +28,7 @@ function App() {
         <section id="experience">
           <Experience />
         </section>
-        <section id="price">
+        <section id="pricing">
           <Pricing />
         </section>
         <section id="slide">
@@ -34,7 +38,9 @@ function App() {
           <FormData />
         </section>
       </body>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }

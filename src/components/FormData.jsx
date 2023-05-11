@@ -11,7 +11,7 @@ export const FormData = () => {
           reality and conditions.
         </p>
       </div>
-      <div className="md:flex flex-col justify-center items-center max-w-[75%] grid md:max-w-[85%] lg:max-w-[70%] m-auto">
+      <div className="md:flex flex-row justify-center items-center max-w-[75%] grid md:max-w-[85%] lg:max-w-[70%] m-auto">
         <div className="md:w-[60%]">
           <img src={mail} alt="" />
         </div>

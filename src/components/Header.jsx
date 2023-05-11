@@ -18,22 +18,22 @@ const Header = () => {
           <div className="hidden md:flex">
             <ul className="outline-none uppercase flex gap-8 tracking-wider text-[15px]">
               <li>
-                <a href="#">Home</a>
+                <a href="#header">Home</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="#pricing">Pricing</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="#experience">About us</a>
               </li>
               <li>
-                <a href="#">Service</a>
+                <a href="#achievement">Service</a>
               </li>
               <li>
-                <a href="#">blog</a>
+                <a href="#slide">blog</a>
               </li>
               <li>
-                <a href="#">contact</a>
+                <a href="#form">contact</a>
               </li>
             </ul>
           </div>
@@ -52,11 +52,11 @@ const Header = () => {
           }
         >
           <ul className="p-1 text-center uppercase ">
-            <a className="font-semibold" href="">
-              <li className="p-2 cursor-pointer my-6 hover:bg-gray-100  ">
+            <li className="p-2 cursor-pointer my-6 hover:bg-gray-100  ">
+              <a href="" className="font-semibold">
                 home
-              </li>
-            </a>
+              </a>
+            </li>
 
             <a className="font-semibold" href="">
               <li className="p-2  cursor-pointer my-6 hover:bg-gray-100">
