@@ -25,7 +25,7 @@ export const Footer = () => {
         </div>
       </div>
       <hr className="w-[90%] m-auto bg-white h-[2px] my-4" />
-      <p className="text-center py-2 pb-5">2019 Zetter All Rights Reserved</p>
+      <p className="text-center py-2 pb-5"> ©2019 Zetter All Rights Reserved</p>
     </div>
   )
 }

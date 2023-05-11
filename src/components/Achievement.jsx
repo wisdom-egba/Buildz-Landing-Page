@@ -4,16 +4,19 @@ import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
 const webVariant = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1.3 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   hidden: { x: -1000, opacity: 0.4 },
 }
 
 export const Achievement = () => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
+
   useEffect(() => {
     if (inView) {
       controls.start("visible")
+    } else {
+      controls.start("hidden")
     }
   }, [controls, inView])
 
@@ -23,7 +26,7 @@ export const Achievement = () => {
         <div className="text-[#FFFF] mt-[200px]  md:mt-[300px]">
           <motion.h1
             ref={ref}
-            initial={hidden}
+            initial="hidden"
             animate={controls}
             variants={webVariant}
             className="text-4xl tracking-wide md:text-4xl font-semibold md:flex justify-center py-6 w-[60%] text-center m-auto leading-relaxed"
