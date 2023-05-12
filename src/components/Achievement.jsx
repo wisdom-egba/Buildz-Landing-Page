@@ -3,11 +3,6 @@ import { Card } from "./Card"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
-const webVariant = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  hidden: { x: -1000, opacity: 0.4 },
-}
-
 export const Achievement = () => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
@@ -15,10 +10,12 @@ export const Achievement = () => {
   useEffect(() => {
     if (inView) {
       controls.start("visible")
-    } else {
-      controls.start("hidden")
     }
   }, [controls, inView])
+  const webVariant = {
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+    hidden: { x: -1000, opacity: 0.4 },
+  }
 
   return (
     <div className="relative ">
