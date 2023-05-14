@@ -2,6 +2,7 @@ import React from "react"
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper"
 
 // Import Swiper styles
 import "swiper/css/bundle"
@@ -9,6 +10,7 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import "swiper/css/scrollbar"
 import { sliders } from "./slide"
+import { delay } from "framer-motion"
 export const DisplaySlider = () => {
   return (
     <div className="relative  max-w-[85%] md:max-w-[85%] lg:max-w-[70%] m-auto flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-[#FFFF] scrollbar-thin scrollbar-thumb-black outline-none">
@@ -26,9 +28,13 @@ export const DisplaySlider = () => {
         //   },
         // }}
 
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         centeredSlides
         navigation
         keyboard
