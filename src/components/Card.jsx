@@ -10,7 +10,7 @@ export const Card = () => {
         initial={{ opacity: 0.3 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className="bg-[#FFFF] h-[300px] w-[380px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0 "
+        className="bg-[#FFFF] h-[300px] w-[350px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0 "
       >
         <div className="pt-10">
           <HiOutlineLightBulb
@@ -28,7 +28,7 @@ export const Card = () => {
         initial={{ opacity: 0.3 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className="bg-[#FFFF] h-[300px] w-[380px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0"
+        className="bg-[#FFFF] h-[300px] w-[350px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0"
       >
         <div className="pt-10">
           <FaRegMoneyBillAlt
@@ -42,7 +42,7 @@ export const Card = () => {
           We provide with all financial services including consultation
         </p>
       </motion.div>
-      <div className="bg-[#FFFF] h-[300px] w-[380px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0">
+      <div className="bg-[#FFFF] h-[300px] w-[350px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0">
         <div className="pt-10">
           <BsCreditCard size={20} style={{ color: "black", fill: "black" }} />
         </div>
