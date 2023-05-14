@@ -30,11 +30,13 @@ export const DisplaySlider = () => {
         spaceBetween={10}
         slidesPerView={1}
         centeredSlides
+        navigation
         keyboard
         pagination={{ clickable: true }}
         scrollbar={{ draggable: false }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
+        className="flex justify-center items-center outline-none"
       >
         {sliders.map((item) => {
           const { id, img, title, description, time } = item
@@ -46,11 +48,11 @@ export const DisplaySlider = () => {
               <div className="py-6 text-left flex flex-col justify-center md:w-[50%] lg:w-[70] ">
                 <img src={img} alt="" />
                 <h1 className="text-lg font-bold pt-8 w-[70%]">{title}</h1>
-                <h2 className="text-gray-400">
+                <h2 className="text-gray-400 py-3">
                   <span className="text-black font-bold">POSTED BY:</span>{" "}
                   {time}
                 </h2>
-                <p>{description}</p>
+                <p className="font-bold pb-8">{description}</p>
               </div>
             </SwiperSlide>
           )
