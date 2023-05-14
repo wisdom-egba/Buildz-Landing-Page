@@ -44,7 +44,7 @@ export const Achievement = () => {
           </div>
         </div>
       </div>
-      <div className="absolute z-20 md:top-[-120px] top-[-900px] w-screen ">
+      <div className="absolute z-20 md:top-[-120px] top-[-1000px] w-screen ">
         <Card />
       </div>
     </div>
