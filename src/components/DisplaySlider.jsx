@@ -11,6 +11,7 @@ import "swiper/css/pagination"
 import "swiper/css/scrollbar"
 import { sliders } from "./slide"
 import { delay } from "framer-motion"
+import { space } from "postcss/lib/list"
 export const DisplaySlider = () => {
   return (
     <div className="relative  max-w-[85%] md:max-w-[85%] lg:max-w-[70%] m-auto flex overflow-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-[#FFFF] scrollbar-thin scrollbar-thumb-black outline-none">
@@ -28,7 +29,7 @@ export const DisplaySlider = () => {
         //   },
         // }}
 
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
         autoplay={{
@@ -39,7 +40,6 @@ export const DisplaySlider = () => {
         navigation
         keyboard
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: false }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         className="flex justify-center items-center outline-none"

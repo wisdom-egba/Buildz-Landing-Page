@@ -5,12 +5,12 @@ import { BsCreditCard } from "react-icons/bs"
 import { motion } from "framer-motion"
 export const Card = () => {
   return (
-    <div className=" relative z-20 max-w-[85%] md:max-w-[85%] lg:max-w-[70%] m-auto md:flex justify-between items-center drop-shadow-xl">
+    <div className=" relative z-20 max-w-[85%] md:max-w-[85%] lg:max-w-[70%] md:flex justify-center md:justify-between items-center drop-shadow-xl grid m-auto">
       <motion.div
         initial={{ opacity: 0.3 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className="bg-[#FFFF] h-[300px] w-[380px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0 "
+        className="bg-[#FFFF] h-[300px] w-[380px] text-2xl md:text-lg md:h-[250px] md:w-[250px] gap-7 lg:h-[300px] lg:w-[300px] flex justify-center flex-col items-center rounded-lg my-12 md:my-0 m-auto "
       >
         <div className="pt-10">
           <HiOutlineLightBulb
