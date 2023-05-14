@@ -28,11 +28,9 @@ export const DisplaySlider = () => {
 
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={1}
         centeredSlides
         keyboard
-        navigation
-        l
         pagination={{ clickable: true }}
         scrollbar={{ draggable: false }}
         onSwiper={(swiper) => console.log(swiper)}
@@ -47,8 +45,11 @@ export const DisplaySlider = () => {
             >
               <div className="py-6 text-left flex flex-col justify-center md:w-[50%] lg:w-[70] ">
                 <img src={img} alt="" />
-                <h1>{title}</h1>
-                <h2>POSTED BY: {time}</h2>
+                <h1 className="text-lg font-bold pt-8 w-[70%]">{title}</h1>
+                <h2 className="text-gray-400">
+                  <span className="text-black font-bold">POSTED BY:</span>{" "}
+                  {time}
+                </h2>
                 <p>{description}</p>
               </div>
             </SwiperSlide>
