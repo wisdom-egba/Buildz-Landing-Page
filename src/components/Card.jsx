@@ -19,7 +19,7 @@ export const Card = () => {
           />
         </div>
         <h1 className="uppercase font-semibold ">branding</h1>
-        <p className="md:px-6 px-9 pb-20 text-[22px] md:text-sm lg:text-lg text-center text-gray-500">
+        <p className="md:px-6 px-9 pb-20 text-[18px] md:text-sm lg:text-lg text-center text-gray-500">
           Regular Business Law Assistance service includes monitoring the legal
           sphere of your business
         </p>
@@ -38,7 +38,7 @@ export const Card = () => {
         </div>
 
         <h1 className="uppercase font-semibold">finance</h1>
-        <p className="md:px-6 px-9 pb-20 text-[22px] md:text-sm lg:text-lg text-center text-gray-500">
+        <p className="md:px-6 px-9 pb-20 text-[18px] md:text-sm lg:text-lg text-center text-gray-500">
           We provide with all financial services including consultation
         </p>
       </motion.div>
@@ -48,7 +48,7 @@ export const Card = () => {
         </div>
 
         <h1 className="uppercase font-semibold">marketing</h1>
-        <p className="md:px-6 px-9 pb-20 text-[22px] md:text-sm lg:text-lg text-center text-gray-500">
+        <p className="md:px-6 px-9 pb-20 text-[18px] md:text-sm lg:text-lg text-center text-gray-500">
           Good marketing plan is crucial for businessmen who wnat to develop
           their businesses
         </p>

@@ -16,30 +16,30 @@ export const Achievement = () => {
           </p>
           <div className="md:flex justify-center gap-[100px] mt-9">
             <div className="flex flex-col justify-center items-center py-7 md:py-0 ">
-              <h1 className="text-6xl md:text-3xl font-bold py-4 md:py-2">
+              <h1 className="text-5xl md:text-3xl font-bold py-4 md:py-2">
                 600
               </h1>
-              <p className="uppercase text-3xl  md:text-sm">awards won</p>
+              <p className="uppercase text-2xl  md:text-sm">awards won</p>
             </div>
             <div className="flex flex-col justify-center items-center py-7 md:py-0 ">
-              <h1 className="text-6xl md:text-3xl font-bold py-4 md:py-2">
+              <h1 className="text-5xl md:text-3xl font-bold py-4 md:py-2">
                 567
               </h1>
-              <p className="uppercase text-3xl  md:text-sm">
+              <p className="uppercase text-2xl  md:text-sm">
                 satisfied clients
               </p>
             </div>
             <div className="flex flex-col justify-center items-center py-7 md:py-0 ">
-              <h1 className="text-6xl md:text-3xl font-bold py-4 md:py-2">
+              <h1 className="text-5xl md:text-3xl font-bold py-4 md:py-2">
                 670
               </h1>
-              <p className="uppercase text-3xl  md:text-sm">startup growth</p>
+              <p className="uppercase text-2xl  md:text-sm">startup growth</p>
             </div>
             <div className="flex flex-col justify-center items-center py-7 md:py-0 ">
-              <h1 className="text-6xl md:text-3xl font-bold py-4 md:py-2">
+              <h1 className="text-5xl md:text-3xl font-bold py-4 md:py-2">
                 500
               </h1>
-              <p className="uppercase text-3xl  md:text-sm">average prices</p>
+              <p className="uppercase text-2xl  md:text-sm">average prices</p>
             </div>
           </div>
         </div>
