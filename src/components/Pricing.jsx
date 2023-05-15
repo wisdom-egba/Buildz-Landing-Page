@@ -10,7 +10,7 @@ export const Pricing = () => {
           financial planning.
         </p>
       </div>
-      <div className=" relative z-0 max-w-[85%] grid place-items-center md:max-w-[85%] lg:max-w-[70%] m-auto md:flex justify-center items-center">
+      <div className=" relative z-10 max-w-[85%] grid place-items-center md:max-w-[85%] lg:max-w-[70%] m-auto md:flex justify-center items-center">
         <div className="text-center  shadow-slate-500/30 shadow-lg h-[550px] w-[360px] md:h-[540px] md:w-[300px] rounded-xl">
           <h2 className="mt-5 text-gray-400 text-lg">1 USER</h2>
           <div className="py-6">
